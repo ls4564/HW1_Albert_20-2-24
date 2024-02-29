@@ -6,14 +6,14 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
     Switch sw;
     ToggleButton toogBtn;
-    ConstraintLayout cl;
-
+    LinearLayout cl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
         if(!sw.isChecked() && toogBtn.isChecked() )
         {
-            cl.setBackgroundColor(Color.RED);
+            cl.setBackgroundColor(Color.rgb(236,00,255));
         }
 
         if(sw.isChecked() && !toogBtn.isChecked() )
         {
-            cl.setBackgroundColor(Color.MAGENTA);
+            cl.setBackgroundColor(Color.rgb(72,00,255));
         }
 
         if(!sw.isChecked() && !toogBtn.isChecked() )
